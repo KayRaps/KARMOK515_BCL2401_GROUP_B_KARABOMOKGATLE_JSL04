@@ -6,9 +6,9 @@
 
 let userPreference = "sugar-free";
 if (userPreference === "Regular") {
-    console.log("User prefers Regular Monster Energy drink.");
+    console.log("Sugar-free.");
 } else {
-    console.log("User prefers Sugar-free Monster Energy drink.");
+    console.log("Regular.");
 }
 
 // #### Challenge 2: Stock Check
