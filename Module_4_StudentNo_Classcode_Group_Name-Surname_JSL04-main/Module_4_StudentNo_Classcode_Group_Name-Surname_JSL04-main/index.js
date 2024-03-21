@@ -19,8 +19,8 @@ if (userPreference === "Regular") {
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
 let cansLeft = 3; // Any number of cans
-let stockStatus = 'cansLeft' < 5 ? "Time to restock!" : "We're stocked!"
-console.log(cansLeft < 5 ? 'Time to restock!' : "We're stocked!");
+let stockCheck = cansLeft < 5 ? "Time to restock!" : "We're stocked!";
+console.log(stockCheck);
 
 
 // #### Challenge 3: Workout Intensity
@@ -28,9 +28,12 @@ console.log(cansLeft < 5 ? 'Time to restock!' : "We're stocked!");
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
 let heartRate = 95; // Current heart rate in bpm
-let workoutIntensity = heartRate < 100 ? "Boost needed!" : "Energy levels are high!";
-console.log(heartRate < 100 ? 'Boost needed!' : 'Energy levels are high!');
 
+if (heartRate < 100) {
+    console.log("Boost needed!");
+} else {
+    console.log("Energy levels are high!");
+}
 
 // #### Challenge 4: Temperature Suitability
 // Monster Energy drinks are best served cold. Given the current temperature, use a ternary to print "Chilled to perfection!" 
@@ -38,7 +41,7 @@ console.log(heartRate < 100 ? 'Boost needed!' : 'Energy levels are high!');
 
 let currentTemp = 4; // Current temperature in °C
 let tempSuitability = currentTemp <= 5 ? "Chilled to perfection!": "Needs a cooler!";
-console.log(currentTemp <= 5 ? 'Cilled to perfection!' : 'Needs a cooler!');
+console.log(tempSuitability);
 
 
 // #### Challenge 5: Late Night Coding Session
@@ -55,7 +58,11 @@ let currentHour = 22;
 
 
 let drinkDecision = currentHour >= 7 && currentHour < 24 ? "Unleash the Beast!" : "Better stick to water.";
-console.log(currentHour >= 7 && currentHour < 24 ? 'Unleash the Beast!' : 'Better stick to water.');
+if (currentHour >= 7 && currentHour < 24) {
+    console.log("Unleash the beast!");
+} else {
+    console.log("Better stick to water.");
+}
 
 
 
