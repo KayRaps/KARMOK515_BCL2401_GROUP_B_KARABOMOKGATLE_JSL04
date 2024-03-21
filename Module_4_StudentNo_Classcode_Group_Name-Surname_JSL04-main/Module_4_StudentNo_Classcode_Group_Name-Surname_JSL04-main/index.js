@@ -4,9 +4,6 @@
 // Given a variable that holds a user's preferred type of Monster Energy drink, 
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
 
-//let userPreference = 'Sugar-free'; // Possible values: 'Regular', 'Sugar-free', or undefined
-//let flavorSelection = userPreference ? userPreference: 'Regular';
-//console.log(userPreference ? userPreference === 'Suagr-free' ? 'Sugar-free' : 'Regular' : 'Regular');
 let userPreference = "sugar-free";
 if (userPreference === "Regular") {
     console.log("User prefers Regular Monster Energy drink.");
